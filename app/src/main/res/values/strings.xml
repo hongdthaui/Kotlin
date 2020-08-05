@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Generals Vietnam</string>
+    <string name="bt_home">Home</string>
+    <string name="bt_replay">Replay</string>
+    <string name="research_help">Click on image to find out</string>
+    <string name="game_help">Find the image below similar to the image above</string>
+    <string name="app_id">ca-app-pub-6265686188426262~6874099844</string>
+    <string name="banner_home_footer">ca-app-pub-6265686188426262/8277437588</string>
+    <string name="interstitial_full_screen">ca-app-pub-6265686188426262/1871262590</string>
+    <string name="detail_hungdaovuong" translatable="false">Trần Hưng Đạo tên khai sinh là Trần Quốc Tuấn, còn được gọi là Hưng Đạo Đại Vương. Ông sinh năm 1230, mất năm 1300. Là một nhà chính trị, quân sự, tôn thất hoàng gia Đại Việt thời Trần. Ông được biết đến trong lịch sử Việt Nam với việc chỉ huy quân đội đánh tan hai cuộc xâm lược của quân Nguyên – Mông năm 1285 và năm 1288</string>
+
+</resources>

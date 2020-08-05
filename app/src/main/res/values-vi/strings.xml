@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Danh Tướng Việt Nam</string>
+    <string name="bt_home">Ban đầu</string>
+    <string name="bt_replay">Chơi lại</string>
+    <string name="research_help">Nhấn vào hình để tìm hiểu</string>
+    <string name="game_help">Tìm hình dưới giống với hình trên</string>
+    <string name="app_id">ca-app-pub-6265686188426262~6874099844</string>
+    <string name="banner_home_footer">ca-app-pub-6265686188426262/8277437588</string>
+    <string name="interstitial_full_screen">ca-app-pub-6265686188426262/1871262590</string>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res/android">
+
+<data>
+    <import type="com.hongdthaui.kotlin.R"/>
+    <variable
+        name="viewModel"
+        type="com.hongdthaui.kotlin.viewmodel.ResearchViewModel" />
+</data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.haibatrung)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_haibatrung" />
+
+        <ImageButton
+            android:id="@+id/main_ib_research"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.leloi)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_leloi" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.ngoquyen)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_ngoquyen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.quangtrung)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_quangtrung" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.sontinh)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_sontinh" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.thuytinh)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_thuytinh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.thanhgiong)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_thanhgiong" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.hungdaovuongtranquoctuan)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_huongdaovuong" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.lythuongkiet)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_lythuongkiet" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.anduongvuong)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_anduongvuong" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.tranquoctoan)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_tranquoctoan" />
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick='@{(view)->viewModel.onClickIcon(view, R.raw.yetkieu)}'
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_yetkieu" />
+    </LinearLayout>
+</LinearLayout>
+</layout>

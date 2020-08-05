@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.GameActivity">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hongdthaui.kotlin.viewmodel.GameViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_research"
+>
+
+    <ImageView
+        android:id="@+id/game_icon_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:imageResource="@{viewModel.iconMain}"
+        app:layout_constraintBottom_toTopOf="@id/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_tv_score" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_icon_main"
+        app:srcCompat="@color/design_default_color_background" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/game_bt_home">
+
+        <ImageButton
+            android:id="@+id/game2_bt_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="@{(view)->viewModel.onClickAnswer(view,0)}"
+            android:scaleType="centerInside"
+            app:imageResource="@{viewModel.iconAnswer[1]}" />
+
+        <ImageButton
+            android:id="@+id/game2_bt_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="@{(view)->viewModel.onClickAnswer(view,1)}"
+            android:scaleType="centerInside"
+            app:imageResource="@{viewModel.iconAnswer[2]}" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/game_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="@string/game_help"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_toTopOf="@id/imageView" />
+
+    <TextView
+        android:id="@+id/game_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aclonica"
+        android:text='@{viewModel.scoreTxt,default="0/10"}'
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_tv_title" />
+
+    <ImageButton
+        android:id="@+id/game_bt_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_oval_click"
+        android:onClick="onClickHome"
+        android:src="@drawable/bt_home"
+        app:layout_constraintBottom_toTopOf="@id/game_adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/game_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
